@@ -1,0 +1,30 @@
+block vars
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title=title
+		link(rel='icon', type='image/x-icon', href='favicon.ico')
+		link(rel="stylesheet", href="css/style.css")
+
+	body(class=bodyClass)
+
+		block header
+		if current == "Home"
+			include ../includes/header-home
+		else
+			include ../includes/header
+
+		block content
+			
+
+		block footer
+		include ../includes/footer
+
+		block scripts
+		include ../includes/scripts
+
+		block custom-scripts
+

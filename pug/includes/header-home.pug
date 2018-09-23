@@ -1,0 +1,19 @@
+block vars
+	-var current = 'Home'; //default
+
+
+-var nav = { 'Login': 'login.html', 'About': '/about.html' };
+
+header
+	a.logo(href="./")
+		img(src="../images/", alt="Site logo")
+
+	nav.main-nav
+		ul
+			each val, key in nav
+				if current === key
+					li.active
+						a(href=val, title=key)= key
+				else
+					li
+						a(href=val, title=key)= key

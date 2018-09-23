@@ -1,0 +1,19 @@
+block vars
+	-var current = 'Home'; //default
+
+
+-var nav = { 'Legacy': 'legacy.html', 'Family': '/family.html', 'Tree': '/tree.html', 'Account': '/account.html', 'Logout': '/logout.html' };
+
+header
+	a.logo(href="./")
+		img(src="../images/", alt="")
+
+	nav.main-nav
+		ul
+			each val, key in nav
+				if current === key
+					li.active
+						a(href=val, title=key)= key
+				else
+					li
+						a(href=val, title=key)= key
