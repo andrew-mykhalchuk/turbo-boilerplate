@@ -5,16 +5,22 @@
 
 $font-primary: 'Vollkorn', serif;
 
+
 * {
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
 	color: #999;
+	font-size: 1rem;
 	font-family: $font-primary;
+	line-height: 1.15;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	line-height: 1.15;
 }
 
 a {
@@ -47,4 +53,9 @@ h2 {
 
 h3 {
 	font-size: 1.5rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
 }
